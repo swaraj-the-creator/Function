@@ -23,6 +23,7 @@ while i <= 100:
             return "Great choice! You picked many art supplies for your project."
         else:
             return "Thanks for shopping at the art supplies store!"
+    money = rounded_change
     closing_message = thank_you_message(items_bought)
     print("")
     print("===== ART SUPPLIES BILL =====")
@@ -31,7 +32,11 @@ while i <= 100:
     print("Total Cost:", rounded_total)
     print("Amount Paid:", amount_paid)
     print("Change Due:", rounded_change)
-    print(closing_message)
+    if amount_paid <= rounded_total:
+        print("Money left to pay: ",money) 
+        print(closing_message)
+    else:
+        print(closing_message)
     print("=============================")
     yn = str(input("More customer? yes/no:"))
     if yn == "yes":
