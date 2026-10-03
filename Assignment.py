@@ -53,4 +53,3 @@ while i <= 100:
         print("it's an invalid answer.")
     i = i + 1
     r =+ 1
-print("Total customers served: ",r)
