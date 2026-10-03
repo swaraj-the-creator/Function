@@ -1,4 +1,5 @@
 i = 0
+r = 0
 while i <= 100:
     def greet_customer():
         print("Welcome to the Art Supplies Store!")
@@ -51,4 +52,5 @@ while i <= 100:
     else:
         print("it's an invalid answer.")
     i = i + 1
-print("Total customers served: ",i)
+    r =+ 1
+print("Total customers served: ",r)
